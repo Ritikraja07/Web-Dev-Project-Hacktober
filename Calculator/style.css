@@ -1,0 +1,53 @@
+body{
+    background: rgb(238,174,202);
+background: linear-gradient(90deg, rgba(238,174,202,1) 21%, rgba(206,179,213,1) 62%, rgba(148,187,233,1) 100%); 
+}
+.heading{
+    text-align: center;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 20rem;
+    margin: auto;
+    border: 2px solid black;
+    background-color: rgb(255, 250, 244);
+}
+.btn{
+    background-color: plum;
+    border: 2px solid rgb(221, 125, 192);
+    margin: 8px 3px;
+    padding: 20px;
+    box-shadow: 0 1px 6px #702870;
+    cursor: pointer;
+    font-weight: bold;
+    border-radius: 8px;
+    font-size: 1.1em;
+    text-align: center;
+    width:3.5rem;
+}
+.row input{
+    margin: 1rem;
+    width: 12rem;
+    padding: 10px 38px;
+    border: 2px solid black;
+    border-radius: 9px;
+    font-size: 20px;
+}
+.operation-btn{
+    background-color: palevioletred;
+    font-size: 1.2em;
+}
+.equals-btn{
+    background-color: rgb(240, 70, 98);
+    border-radius: 18px;
+    border: 2px solid rgb(255, 123, 215);
+    font-size: 1.3em;
+}
+.btn-click{
+    box-shadow: 0 1px 6px #702870 inset;
+    transition: box-shadow 0.1ms ease;
+}
