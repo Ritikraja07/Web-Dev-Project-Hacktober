@@ -1,0 +1,356 @@
+*{
+    margin:0;
+    padding:0;
+}
+
+
+/* Landing Page */
+body{
+    background-color: #fff;
+}
+
+#Landing{
+    width: 100%;
+    align-items: center;
+    background:url(images/home-bg.jpg) no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+/* Navbar */
+.navbar-brand{
+    font-family: 'Rubik', sans-serif;
+    margin: 0;
+    font-size: 180%;
+    display: inline;
+    width: 25%;
+}
+@media only screen and (max-width:600px){
+    .navbar-brand{
+        width: 80%;
+    }
+}
+#navlogo{
+    width: 20%;
+}
+.menu-link{
+    font-family:'Rubik', sans-serif;
+    font-size:133%;
+}
+.menu-link{
+    color: #2a2a2a;
+    text-align: center;
+}
+.menu-link:hover{
+    color:#FF7800;
+}
+.nav-list{
+    margin-right: 15%;
+}
+.link-item{
+    margin-left:6%;
+}
+/* main section */
+
+.home-img{
+    width: 90%;
+}
+.main{
+    text-align: center;
+    width: 100%;
+    padding:5% 6%;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+#greet{
+    font-size: 340%;
+    font-weight: 700;
+}
+.main-left{
+    padding:5%;
+}
+#greet2{
+    font-size: 230%;
+    font-family: 'Merriweather Sans', sans-serif;
+    font-weight: 200;
+}
+#greet-para{
+    color: #8f8f8f;
+    font-size: 120%;
+    padding: 2%;
+    line-height:1.7;
+}
+.search-btn{
+    border: 1px solid black;
+}
+.search-btn:hover{
+    background-color: #FF7800;
+    color: #fff;
+}
+input[type="search"]:focus{
+    border-color: rgba(229, 103, 23, 0.8);
+    box-shadow: 0 1px 1px rgba(229, 103, 23, 0.075) inset, 0 0 8px rgba(224, 108, 36, 0.6);
+    outline: 0 none;
+}
+
+/* Features Section */
+.feat-icon{
+    color: #FF7800;
+    font-size: 460%;
+    padding:2%;
+}
+.feature h5{
+    font-size:190%;
+}
+.feature p{
+    color: #8f8f8f;
+    font-size: 130%;
+}
+.feature{
+    padding:3%;
+    text-align: center;
+}
+#features{
+    padding: 6% 5% 0;
+    font-family: 'Merriweather Sans', sans-serif;
+}
+
+/* App section */
+#app{
+    background-color: #FF7800;
+    text-align: center;
+    width: 100%;
+}
+.down-btn{
+    border: 1px solid #000;
+    background-color: #fff;
+    color: #000;
+    margin:4%;
+    font-weight: 600;
+}
+.down-btn:hover{
+    background-color: #2a2a2a;
+    color: #fff;
+    border: none;
+}
+#mk-img{
+    width: 90%;
+    height: 90%;
+    padding:2%;
+    margin-left:5%;
+}
+.app-main{
+    width: 100%; 
+    padding:0 5%;
+}
+.app-in{
+    margin-top:20%;
+}
+#app-head{
+    color: #fff;
+    font-size: 360%;
+    width: 90%;
+    font-weight: 800;
+    font-family: 'Fira Sans', sans-serif;
+}
+#app-para{
+    font-family: 'Fira Sans', sans-serif;
+    color: rgb(244, 238, 238);
+    font-size: 170%;
+}
+.app-left{
+    text-align: center;
+}
+
+/* Popular section */
+#popular{
+    padding: 2% 5%;
+    background-color: #fff;
+}
+.food-card{
+    padding:3%;
+    height: 96%;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom:5%;
+    background-color: #f5f6f8;
+}
+.food-card:hover{
+    border:1.8px solid #FF7800;
+}
+.star{
+    color: gold;
+    margin:0 1%;
+}
+.card-text{
+    padding:1.5% 0;
+    margin: 0;
+}
+.order-btn{
+    border: 1px solid black;
+    padding: 1% 2%;
+}
+.order-btn:hover{
+    background-color: #FF7800;
+    color: #fff;
+}
+.card-title{
+    margin-bottom: 1%;
+    font-size: 110%;
+}
+.card-img{
+    width:90%;
+    height:85%;
+}
+.place{
+    font-size:70%;
+    padding:1% 0;
+}
+.rupee{
+    color: #2a2a2a;
+    margin: 1%;
+}
+.pop-row{
+    padding:2%;
+}
+#pop{
+    text-align: center;
+    font-size: 350%;
+    font-family:'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.fire{
+    color:#E25822;
+    padding: 2%;
+}
+
+/* order Section */
+#ord{
+    font-size: 260%;
+    text-align: center;
+    font-family:'Merriweather Sans', sans-serif;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.ser{
+    text-align: center;
+    width: 70%;
+    padding: 3%;
+    position: relative;
+    left: 18%;
+}
+#order{
+    padding: 2% 5%;
+}
+#ord-card{
+    padding:2%;
+    height: 96.5%;
+    text-align: center;
+    font-family: 'Merriweather Sans', sans-serif;
+    margin-bottom:5%;
+    background-color: #f5f6f8;
+}
+
+#ord-card:hover{
+    border: 2px solid #FF7800;
+    text-align: center;
+}
+.ord-img{
+    height: 55%;
+}
+
+/* Member  Section */
+.mem{
+    text-align: center;
+    text-align: center;
+    background-color: #FF7800;
+}
+#mem-text{
+    color: #fff;
+    font-family: 'Merriweather Sans', sans-serif;
+    padding: 4% 4% 1.8%;
+    font-size: 320%;
+    width: 80%;
+    position: relative;
+    left: 10%;
+    font-weight: 700;
+}
+.mem-btn{
+    background-color: #f5f6f8;
+    font-weight: 500;
+}
+@media only screen and (max-width:600px){
+    #mem-text{
+        font-size: 185%;
+    }
+}
+/* Footer Section */
+.social{
+   text-align: center; 
+}
+.icon{
+    margin: 4%;
+    margin-bottom: 2%;
+}
+.fb-icon:hover{
+    color: #4267B2
+}
+.insta-icon:hover{
+    color: #E1306C
+}
+.g-icon:hover{
+    color: lightcoral;
+}
+.l-icon:hover{
+    color:rgb(20, 136, 182);
+}
+.tweet-icon:hover{
+    color:rgb(67, 152, 204);
+}
+.footer{
+    background-color:#DAEAF1;
+}
+.rem-foot{
+    padding:5%;
+    padding-bottom:3.4%;
+    width: 100%;
+}
+#logo{
+    color: #FF7800;
+    font-size: 220%;
+    font-weight: 600;
+    font-family: Arial, Helvetica, sans-serif;
+}
+@media only screen and (max-width:600px){
+    #logo{
+        font-size: 130%;
+    }
+}
+.sal{
+    color:#000;
+    font-size: 105%;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+.sal:hover{
+    text-decoration: underline;
+    text-decoration-color: #000;
+}
+#h-foot{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.copyright{
+    text-align: center;
+    padding: 2% 5% 3%;
+}
+.Touch{
+    text-align: center;
+    margin-top: 2%;
+}
+#accept-btn{
+    text-align: center;
+    margin-left: 40%;
+}
+.disclamer{
+    font-size: 70%;
+}

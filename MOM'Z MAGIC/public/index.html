@@ -1,0 +1,854 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mom'z Magik</title>
+
+    <!-- favicon -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <!-- Bootstrap Section -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
+    <!-- CSS SECTION -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!-- Google Fonts Section -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@500&family=Staatliches&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto+Mono&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Bootstrap JS -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
+
+    <!--Fontawesome JS-->
+    <script
+      src="https://kit.fontawesome.com/eaa87c3c3f.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- landing section -->
+
+    <section id="Landing">
+      <nav class="navbar navbar-expand-md">
+        <div class="container-fluid">
+          <a href="#" class="navbar-brand">
+            <img src="images/logo.png" id="navlogo" />MOM'Z MAGIK
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#menu"
+            aria-controls="menu"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="menu">
+            <ul class="navbar-nav ms-auto nav-list">
+              <li class="nav-item link-item">
+                <a href="#Landing" class="nav-link menu-link"> Home </a>
+              </li>
+              <li class="nav-item link-item">
+                <a href="#popular" class="nav-link menu-link"> Popular </a>
+              </li>
+              <li class="nav-item link-item">
+                <a href="#order" class="nav-link menu-link"> Order </a>
+              </li>
+              <li class="nav-item link-item">
+                <a href="#" class="nav-link menu-link"> Cart </a>
+              </li>
+              <li class="nav-item link-item">
+                <a
+                  href="profile.html"
+                  target="_blank"
+                  class="nav-link menu-link"
+                >
+                  Profile
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div class="row main">
+        <div class="col-md-6 main-left">
+          <h2 id="greet">Welcome Foodie!!..</h2>
+          <h5 id="greet2">Tastes like Never</h5>
+          <p id="greet-para">
+            Explore curated lists of top restaurants, cafes, pubs, and bars
+            across the Globe, based on trends and enjoy the food like never
+            before...
+          </p>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-3"
+              required
+              type="search"
+              placeholder="Search for Restaurant, Food or cuisine"
+              aria-label="Search"
+            />
+            <button class="btn search-btn" type="submit">Search</button>
+          </form>
+        </div>
+        <div class="col-md-6">
+          <img src="images/home-img.png" class="home-img" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+
+    <section id="features">
+      <div class="row">
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-map-location-dot feat-icon"></i>
+          <h5>Live Order Tracking</h5>
+          <p>
+            Know where your order is at all times, from the restaurant to your
+            doorstep
+          </p>
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-truck-fast feat-icon"></i>
+          <h5>Lightning-Fast Delivery</h5>
+          <p>
+            Experience our superfast delivery for food delivered fresh & in no
+            time
+          </p>
+        </div>
+        <div class="col-lg-4 feature">
+          <i class="fa-solid fa-indian-rupee-sign feat-icon"></i>
+          <h5>No Minimum Order</h5>
+          <p>
+            Order in for yourself or for the group, with no restrictions on
+            order value
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- App section -->
+
+    <div class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ff7800"
+          fill-opacity="1"
+          d="M0,288L48,272C96,256,192,224,288,197.3C384,171,480,149,576,165.3C672,181,768,235,864,250.7C960,267,1056,245,1152,250.7C1248,256,1344,288,1392,304L1440,320L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+        ></path>
+      </svg>
+    </div>
+
+    <section id="app">
+      <div class="row app-main">
+        <div class="col-md-6 app-left">
+          <div class="app-in">
+            <h1 id="app-head">Restaurants in your pocket</h1>
+            <p id="app-para">
+              Order from your favorite restaurants & track on the go, with our
+              app.
+            </p>
+            <button type="button" class="btn btn-outline down-btn btn-lg">
+              <i class="fa-brands fa-google-play"></i> Download
+            </button>
+            <button type="button" class="btn btn-outline down-btn btn-lg">
+              <i class="fa-brands fa-apple"></i> Download
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6 app-right">
+          <img src="images/mk fin.png" id="mk-img" />
+        </div>
+      </div>
+    </section>
+    <div class="svg">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+          fill="#ff7800"
+          fill-opacity="1"
+          d="M0,32L48,48C96,64,192,96,288,117.3C384,139,480,149,576,144C672,139,768,117,864,117.3C960,117,1056,139,1152,133.3C1248,128,1344,96,1392,80L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+        ></path>
+      </svg>
+    </div>
+
+    <!-- Popular Section -->
+
+    <section id="popular">
+      <p id="pop">
+        <i class="fa-solid fa-fire fire"></i>Popular<i
+          class="fa-solid fa-fire fire"
+        ></i>
+      </p>
+      <div class="row pop-row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/bir.png" class="card-img-top" />
+            <h5 class="card-title">Fried Chicken Biriyani</h5>
+            <p class="card-text place">Mehfil Restaurant, kphb, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>220
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/nood.jpg" class="card-img-top" />
+            <h5 class="card-title">Schezwan Noodles</h5>
+            <p class="card-text place">Chinese Deck, Colaba, Mumbai.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>160
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ice.jpg" class="card-img-top" />
+            <h5 class="card-title">Chocolate Ice Cream</h5>
+            <p class="card-text place">Cream Stone, Malleshwaram, BLR.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>140
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/roti.png" class="card-img-top" />
+            <h5 class="card-title">Roti & Kadai Panneer</h5>
+            <p class="card-text place">Viyyala vari vindu, LB Nagar, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>290
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/pizza.jpg" class="card-img-top" />
+            <h5 class="card-title">Pepporoni & cheese Pizza</h5>
+            <p class="card-text place">Domino's Pizza, Avenue Mall, Chennai.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>260
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/dessert.jpg" class="card-img-top" />
+            <h5 class="card-title">Chocolate Dessert</h5>
+            <p class="card-text place">cream stone, Port colony, Vizag.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>140
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/pasta.jpg" class="card-img-top" />
+            <h5 class="card-title">Seasoned Veg Penne Pasta</h5>
+            <p class="card-text place">
+              Darvo's Restaurant, Trivendam, Chennai.
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>240
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/flnm.jpg" class="card-img-top" />
+            <h5 class="card-title">North Indian Meal(family)</h5>
+            <p class="card-text place">
+              The Indian Kitchen, Saurashtra, Gujarat.
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>460
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/pb.jpg" class="card-img-top" />
+            <h5 class="card-title">Pav Bhaji & Dal Makkan</h5>
+            <p class="card-text place">
+              Simhapuri Kitchens, Benz Circle,Visakhapatnam.
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>160
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/swt.jpg" class="card-img-top" />
+            <h5 class="card-title">5 varities of sweets</h5>
+            <p class="card-text place">Pulla Reddy Sweets, JNTU, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>440
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/mdf.jpg" class="card-img-top" />
+            <h5 class="card-title">Arabian mandi</h5>
+            <p class="card-text place">arabian Mandi, Miyapur, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>360
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/fsh.jpg" class="card-img-top" />
+            <h5 class="card-title">Fried Fish</h5>
+            <p class="card-text place">Hotel Nellore Grand, Nellore, AP.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>280
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Section -->
+    <section id="order">
+      <p id="ord">
+        <i class="fa-solid fa-fire fire"></i>Order At Your Place
+        <i class="fa-solid fa-fire fire"></i>
+      </p>
+      <form class="d-flex ser" role="search">
+        <input
+          class="form-control me-2"
+          type="search"
+          placeholder="Search for Restaurant, Food or cuisine"
+          aria-label="Search"
+        />
+        <button class="btn btn-outline search-btn" type="submit">Search</button>
+      </form>
+
+      <div class="row">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/ord -6.jpg" alt="" class="card-img-top ord-img" />
+            <h5 class="card-title">Chicken Rolls x2</h5>
+            <p class="card-text place">Chinese Basket, MYP, HYD.</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign"></i> 160
+            </p>
+            <a href="#" class="btn btn-outline order-btn rupee">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img
+              src="images/ord -1 nood.jpg"
+              alt=""
+              class="card-img-top ord-img"
+            />
+            <h5 class="card-title">Schezwan Noodles</h5>
+            <p class="card-text place">Taco Bell, LB Nagar, HYD</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>`
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign"></i>180
+            </p>
+            <a href="#" class="btn btn-outline order-btn rupee">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img
+              src="images/ord -7 burger.jpg"
+              alt=""
+              class="card-img-top ord-img"
+            />
+            <h5 class="card-title">Chicken Burger</h5>
+            <p class="card-text place">Burger King, Forum Mall, KPHP</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>165
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/ord 5.jpg" alt="" class="card-img-top ord-img" />
+            <h5 class="card-title">Veg Manchurian</h5>
+            <p class="card-text place">Hotel Vaibhav,Y- Junction, HYD</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>115
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img
+              src="images/ord-1 fish.jpg"
+              alt=""
+              class="card-img-top ord-img"
+            />
+            <h5 class="card-title">Fried Fish</h5>
+            <p class="card-text place">Sea Special, KMP, HYD</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>190
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/ord-4.jpg" alt="" class="card-img-top ord-img" />
+            <h5 class="card-title">Shaurma & French Fries</h5>
+            <p class="card-text place">Burger King, Ameerpet, HYD</p>
+            <p class="card-title">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>190
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/pb.jpg" class="card-img-top" />
+            <h5 class="card-title">Pav Bhaji & Dal Makkan</h5>
+            <p class="card-text place">Tiffins, JNTU, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>160
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/ord rst fsh.jpg" class="card-img-top" />
+            <h5 class="card-title">Roasted Sea Fish</h5>
+            <p class="card-text place">Sea Special, KMP, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>155
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card" id="ord-card">
+            <img src="images/ord pst.jpg" class="card-img-top" />
+            <h5 class="card-title">Chocolate Pastree x2</h5>
+            <p class="card-text place">Mithai Waala, MKG, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>155
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/pizza.jpg" class="card-img-top" />
+            <h5 class="card-title">Pepporoni & cheese Pizza</h5>
+            <p class="card-text place">Domino's Pizza, Banjara Hills, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>260
+            </p>
+            <a href="#" class="btn btn-outline order-btn">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 10.jpg" class="card-img-top" />
+            <h5 class="card-title">Pepper Chicken Skewers</h5>
+            <p class="card-text place">Taco Bell, LB Nagar, HYD.</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>135
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 11.jpg" class="card-img-top" />
+            <h5 class="card-title">Italian Sphagetti</h5>
+            <p class="card-text place">MC Donalds, Madhapur, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>155
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 12.jpg" class="card-img-top" />
+            <h5 class="card-title">Schezwan Friedrice</h5>
+            <p class="card-text place">Chinese Deck, MYP, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>115
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 13.jpg" class="card-img-top" />
+            <h5 class="card-title">Meat Blini & Cutlets</h5>
+            <p class="card-text place">Hotel Yaibhav, Y-junction, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>215
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 14.jpg" class="card-img-top" />
+            <h5 class="card-title">Tortila Wrap & salad</h5>
+            <p class="card-text place">Tiffins, JNTU, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star-half-stroke star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>110
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-sm-6 col-6">
+          <div class="card food-card">
+            <img src="images/ord 15.png" class="card-img-top" />
+            <h5 class="card-title">Baked Chicken Wings</h5>
+            <p class="card-text place">KFC, Forum mall, KPHP, HYD</p>
+            <p class="card-text">
+              <i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-solid fa-star star"></i
+              ><i class="fa-regular fa-star star"></i>
+            </p>
+            <p class="card-text">
+              <i class="fa-solid fa-indian-rupee-sign rupee"></i>110
+            </p>
+            <a href="#" class="btn btn-outline order-btn" href="#">Order</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Member Section -->
+    <section class="member">
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ff7800"
+            fill-opacity="1"
+            d="M0,256L48,234.7C96,213,192,171,288,181.3C384,192,480,256,576,250.7C672,245,768,171,864,165.3C960,160,1056,224,1152,256C1248,288,1344,288,1392,288L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
+      <div class="mem">
+        <h3 id="mem-text">
+          Become our Member and get discount upto 50% on almost all orders
+        </h3>
+        <button type="button" class="btn btn-outline-dark mem-btn">
+          Become Member
+        </button>
+      </div>
+
+      <div>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#ff7800"
+            fill-opacity="1"
+            d="M0,128L48,144C96,160,192,192,288,192C384,192,480,160,576,144C672,128,768,128,864,112C960,96,1056,64,1152,69.3C1248,75,1344,117,1392,138.7L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+          ></path>
+        </svg>
+      </div>
+    </section>
+
+    <!-- Footer Setion -->
+
+    <section class="footer">
+      <div class="social">
+        <i class="fa-brands fa-facebook-f fb-icon icon"></i>
+        <i class="fa-brands fa-instagram insta-icon icon"></i>
+        <i class="fa-brands fa-twitter tweet-icon icon"></i>
+        <i class="fa-brands fa-linkedin l-icon icon"></i>
+        <i class="fa-brands fa-google-plus-g g-icon icon"></i>
+      </div>
+
+      <div class="row rem-foot">
+        <div class="col-sm-4 col-6">
+          <p id="logo">MOM'Z MAGIK</p>
+          <a class="sal" href="#">About Us</a><br />
+          <a class="sal" href="#">Partner With Us</a>
+        </div>
+
+        <div class="col-sm-4 col-6">
+          <h2 id="h-foot">Useful Links</h2>
+          <a href="terms.html" class="sal">Terms & Conditions</a><br />
+          <a href="#" class="sal">payment & Taxes</a><br />
+          <a href="mailto:venkatalokesh789@gmail.com" class="sal">Contact</a>
+        </div>
+
+        <div class="col-sm-4 col-12 Touch">
+          <h4>Get In Touch</h4>
+          <a href="mailto:venkatalokesh789@gmail.com" class="sal">G-mail</a
+          ><br />
+          <a href="tel:+91 6301312307" class="sal">Mobile</a>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <i class="fa-regular fa-copyright"></i
+        ><em> 2022 Lokesh. All Rights Reserved</em> <br /><br />
+        <p class="disclamer">
+          Cart and Profile Section doesn't work.Because I didn't Create it.
+        </p>
+      </div>
+    </section>
+  </body>
+</html>
