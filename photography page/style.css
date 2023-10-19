@@ -15,6 +15,16 @@ h1 {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+.icon a{
+    margin: 15px;
+
+}
+
+svg:hover{
+    transform: scale(1.2);
+    -webkit-transition-duration: 0.3s;
+}
+
 h2 {
     font-weight: 400;
     font-size: 2rem;
@@ -66,12 +76,12 @@ img {
     border-radius: 50px;
     text-decoration: none;
     color: white;
-    transition: backgroung500ms ease;
 }
 
-.btn:hover {
+.btn:hover{
     background-color: black;
-
+    transform: scale(1.2);
+    -webkit-transition-duration: 0.3s;
 }
 
 #header {
