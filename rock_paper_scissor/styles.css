@@ -1,0 +1,191 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* To center everything in game    color: #fff;*/
+.game {
+    display: flex;
+    background-image: url('gradient.jpg');
+    background-size: cover;
+    flex-direction: column;
+    height: 100vh; 
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Title of the game */
+.title {
+    margin-bottom: 25px;
+    position: absolute;
+    top: 0;
+    font-size: 4rem;
+    z-index: 1;
+    color: white;
+    top: 10px;
+    border: solid 2px;
+    position: absolute;
+    top: 3rem;
+    background-color: rgb(255, 255, 255, 0.15);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+}
+
+/* Score Board */
+.score {
+    display: flex;
+    margin: 20px;
+    width: 30vw;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 150px;
+    z-index: 1;
+}
+
+/* Score  */
+.p-count,
+.c-count {
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+/* displaying three buttons in one line */
+.moves {
+    top: 250px;
+}
+
+.options {
+    display: flex;
+    width: 50vw;
+    justify-content: space-evenly;
+    margin-top: 2rem;
+}
+
+.rock,.paper,.scissor,.reload {
+    padding: 0.8rem;
+    border: none;
+    outline: none;
+    color: rgb(255, 255, 255);
+    font-size: 18px;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 10px;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+  }
+
+  .rock:before,.paper:before,.scissor:before,.reload:before {
+    content: "";
+    background: linear-gradient(
+      45deg,
+      #ff0000,
+      #ff7300,
+      #fffb00,
+      #48ff00,
+      #00ffd5,
+      #002bff,
+      #7a00ff,
+      #ff00c8,
+      #ff0000
+    );
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    -webkit-filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing-button-85 20s linear infinite;
+    transition: opacity 0.3s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  @keyframes glowing-button-85 {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 400% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .rock:after,.paper:after,.scissor:after,.reload:after {
+    z-index: -1;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #222;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+  }
+
+.moves {
+    margin-top: 7rem;
+    justify-content: space-evenly;
+    text-align: center;
+}
+
+.move {
+    border: solid 2px;
+    background-color: rgb(255,255,255,0.15);
+    color:white;
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+    font-size: 2rem;
+    font-weight: bold;
+    margin-bottom:auto;
+}
+.movesleft
+{margin-top:0.75rem;
+ font-size:17px;
+}
+/* Reload button style */
+.reload {
+    display: none;
+    margin-top: 2rem;
+    padding: 1rem;
+    background: green;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.result {
+    margin-top: 20px;
+    font-size: 1.2rem;
+    border: solid 2px;
+    background-color: rgb(255,255,255,0.15);
+    border-radius: 1rem;
+    padding: 0.5rem 1.5rem;
+
+}
+
+@media screen and (max-width: 612px) {
+    .title {
+        text-align: center;
+    }
+
+    .score {
+        position: absolute;
+        top: 200px;
+        width: 100vw;
+    }
+
+    .options {
+        width: 100vw;
+    }
+}
